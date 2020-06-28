@@ -6,7 +6,7 @@ services:
 before_install:
 - docker build -t utsa030/devops .
 - docker login -u utsav030 -p utsavmiet2580
-- docker push utsav030/devops
+- docker push -t utsav030/devops
 
 script:
 - python ./pi.py
